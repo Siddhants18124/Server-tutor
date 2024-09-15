@@ -10,7 +10,7 @@ const errorHandlerMiddleware = require('./middleware/errorHandlerMiddleware');
 const app = express();
 const port = process.env.PORT || 5001;
 const corsOptions = {
-    origin: 'https://ai-language-tutor-93lv.vercel.app/', // Allow all origins
+    origin: '*', // Allow all origins
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
